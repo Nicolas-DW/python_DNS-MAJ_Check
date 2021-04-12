@@ -13,13 +13,13 @@ def notify(title, text):
   subprocess.call(['osascript', '-e', CMD, title, text])
 
 
-ip = socket.gethostbyname('appbar.apisquad.space')
-ip2 = socket.gethostbyname('appbar.apisquad.space')
+ip = socket.gethostbyname('[ADDRESS]')
+ip2 = socket.gethostbyname('[ADDRESS]')
 
 while ip2 == ip:
   print('wait')
   time.sleep(5)
-  ip2 = socket.gethostbyname('appbar.apisquad.space')
+  ip2 = socket.gethostbyname('[ADDRESS]')
 
 
 str_ip2 = str(ip2)
